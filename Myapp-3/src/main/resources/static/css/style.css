@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#dfffe5;
+    font-family:'Poppins', sans-serif;
+}
+
+.box{
+    background-color:white;
+    padding:40px 60px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+    font-size:36px;
+    font-weight:bold;
+    color:#444;
+
+    transition:0.3s;
+}
+
+.box:hover{
+    background-color:#f1fff3;
+    transform:scale(1.05);
+}
