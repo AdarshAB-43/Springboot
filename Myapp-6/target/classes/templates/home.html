@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+
+    <div th:utext="${heading}"></div>
+
+    <p th:text="${welcome}"></p>
+
+    <div th:if="${loginStatus}">
+        <h3>Welcome back, student!</h3>
+    </div>
+
+    <div th:unless="${loginStatus}">
+        <h3>Please log in to access the lessons</h3>
+    </div>
+
+</body>
+</html>
