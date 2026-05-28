@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#ffe4ec;
+    font-family:Arial, sans-serif;
+}
+
+.concert-box{
+    background-color:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+
+    font-size:35px;
+    font-weight:bold;
+    color:#333;
+
+    text-align:center;
+}
