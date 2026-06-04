@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Job Portal Registration</title>
+</head>
+<body>
+
+<h2>Job Seeker Registration</h2>
+
+<form th:action="@{/register}" th:object="${jobSeeker}" method="post">
+
+    <label>Full Name:</label>
+    <input type="text" th:field="*{fullName}" required><br><br>
+
+    <label>Mobile Number:</label>
+    <input type="text" th:field="*{mobileNumber}" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" th:field="*{email}" required><br><br>
+
+    <label>Password:</label>
+    <input type="password" th:field="*{password}" required><br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+</body>
+</html>
