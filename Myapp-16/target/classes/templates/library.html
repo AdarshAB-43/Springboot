@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Library Registration</title>
+</head>
+<body>
+
+<h2>Library Membership Registration</h2>
+
+<form th:action="@{/library}" th:object="${member}" method="post">
+
+    Name:
+    <input type="text" th:field="*{name}" required><br><br>
+
+    Date of Birth:
+    <input type="date" th:field="*{dob}" required><br><br>
+
+    Address:
+    <textarea th:field="*{address}" required></textarea><br><br>
+
+    Email:
+    <input type="email" th:field="*{email}" required><br><br>
+
+    Password:
+    <input type="password" th:field="*{password}" required><br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+</body>
+</html>
